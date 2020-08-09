@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00B8D4</color>
+    <color name="colorPrimaryDark">#0088a3</color>
+    <color name="colorAccent">#66ffa6</color>
+    <color name="colorBGPage">#e0f7fa</color>
+
+    <color name="color_cancel">#FF1744</color>
+    <color name="color_acept">#00E676</color>
+    <color name="transparent">#00000000</color>
+</resources>

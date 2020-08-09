@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.AboutAnonimousActivity"
+    tools:showIn="@layout/activity_about_anonimous">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_vertical_margin"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="1. YoTeEscucho (en adelante, la “Aplicación”), es un servicio voluntario y gratuito que conecta a sus usuarios con voluntarios con el fin de proveerles un espacio para ser escuchados."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="2. La Aplicación no ofrece bajo ningún concepto servicios de emergencia, servicios médicos, ni atención a la salud mental de ningún tipo. El usuario reconoce que frente a casos en que exista riego actual o inminente a la vida o la salud de alguna persona, no debe bajo ningún concepto recurrir a la Aplicación, sino a los servicios de emergencia pertinentes."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="3. Los voluntarios no actúan en capacidad de profesionales, ni ofrecen terapia de ningún tipo. Ante cualquier duda o diagnóstico, consulte a un profesional de la salud."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="4. El usuario y el voluntario se conectan de forma anónima mutuamente. El usuario no conocerá los datos del voluntario, ni a la inversa."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="5. La Aplicación no garantiza bajo ningún concepto la disponibilidad permanente del servicio. La misma depende exclusivamente de la oferta y demanda de voluntarios."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="6. El usuario renuncia a cualquier reclamo contra la Aplicación por cualquier diferendo que pudiera tener con un voluntario en el desarrollo del servicio. Asimismo, reconoce que su relación con la Aplicación es gratuita y no constituye relación de consumo. La Aplicación se reserva el derecho expreso a excluir a cualquier usuario de la misma sin expresión de causa."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="7. A todos los efectos de la Ley N° 18.331, el Usuario presta consentimiento para que los datos personales que suministra al registrarse sean utilizados para el cumplimiento del fin de la Aplicación."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="8. Cualquier disputa relativa a estos Términos y Condiciones o que surja de la relación entre la Aplicación y el Usuario, será sometida a los Tribunales de la ciudad de Montevideo, con exclusión de cualquier otro fuero o jurisdicción."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/close_terms_anon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"
+                    android:background="#FF1744"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_close_white"
+                    android:focusable="true"
+                    android:padding="10dp"
+                    android:text="Cerrar"
+                    android:textColor="#FCFCFC"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/accept_terms_anon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/save_icon"
+                    android:focusable="true"
+                    android:padding="10dp"
+                    android:text="Aceptar"
+                    android:textColor="#FCFCFC"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

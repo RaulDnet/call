@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.AboutRegisterActivity"
+    tools:showIn="@layout/activity_about_register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="1. YoTeEscucho (en adelante, la “Aplicación”), es un servicio voluntario y gratuito que conecta a sus usuarios con voluntarios con el fin de proveerles un espacio para ser escuchados."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text=" 2. Quienes  ofrecen su tiempo para escuchar a los Usuarios (en adelante, los “Voluntarios”), reconocen que lo hacen como mera liberalidad."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text=" 3. En ningún caso los voluntarios serán considerados como empleados, proveedores ni asociados a la Aplicación. El registro en calidad de Voluntario se hace de forma libre y gratuita, y podrá ser revocado en cualquier momento sin expresión de causa por cualquiera de las partes."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="4. Se prohíbe a los Voluntarios recibir de ninguna persona retribución de clase alguna por su actividad. Asimismo, se prohíbe violar la anonimidad del contacto con el Usuario."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text=" 5. Los Voluntarios son los únicos responsables por el contenido de sus dichos durante el uso de la Aplicación, y se obligan a mantener indemne a la misma frente a cualquier reclamo derivado de su actividad."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="6.  A todos los efectos de la Ley N° 18.331, el Voluntario presta consentimiento para que los datos personales que suministra al registrarse sean utilizados para el cumplimiento del fin de la Aplicación."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:scrollHorizontally="true"
+                android:text=" 7. Cualquier disputa relativa a estos Términos y Condiciones o que surja de la relación entre la Aplicación y el Voluntario, será sometida a los Tribunales de la ciudad de Montevideo, con exclusión de cualquier otro fuero o jurisdicción."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/close_terms_reg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"
+                    android:background="#FF1744"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_close_white"
+                    android:focusable="true"
+                    android:padding="10dp"
+                    android:text="Cerrar"
+                    android:textColor="#FCFCFC"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/accept_terms_reg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/save_icon"
+                    android:focusable="true"
+                    android:padding="10dp"
+                    android:text="Aceptar"
+                    android:textColor="#FCFCFC"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

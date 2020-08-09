@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Yo Te Escucho</string>
+    <string name="action_settings">Credenciales</string>
+    <string name="action_about">Acerca</string>
+
+    <string name="state_calling">Llamando&#8230;</string>
+    <string name="state_incoming_call">Llamada Entrante</string>
+    <string name="state_call_in_progress">Llamada en progreso...</string>
+    <string name="time_default">00:00</string>
+    <string name="speaker">Altavoz</string>
+    <string name="mute">Silencio</string>
+    <string name="title_activity_incoming">IncomingActivity</string>
+    <string name="title_activity_login">a</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_register">RegisterActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_conect">Conectar</string>
+    <string name="action_disconect">Desconectar</string>
+    <string name="title_activity_about_register">Términos y Condiciones</string>
+    <string name="title_activity_about_anonimous">AboutAnonimousActivity</string>
+    <string name="title_activity_register2">Register2Activity</string>
+
+
+</resources>

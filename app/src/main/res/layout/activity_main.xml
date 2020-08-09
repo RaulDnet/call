@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBGPage"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+    
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:isScrollContainer="false"
+            app:logo="@mipmap/ic_launcher_foreground"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+        <LinearLayout
+            android:id="@+id/appbar_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#8B000000"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/action_call_margin"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/appbar_status_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/dot_red" />
+
+            <TextView
+                android:id="@+id/appbar_status_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/action_call_margin"
+                android:text="Desconectado" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/warning_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/fab_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView99"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center"
+            android:text="Yo Te Escucho no es un servicio de emergencia ni atención médica o psicológica. \nAl usar el servicio, usted reconoce haber leído y aceptado los Términos y Condiciones."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/initite_call_container"
+        style="?metaButtonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/initiate_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_margin="@dimen/fab_margin"
+            android:backgroundTint="@color/color_acept"
+            app:borderWidth="0dp"
+            app:srcCompat="@drawable/ic_pickup"
+            app:fabCustomSize='70dp'
+            app:fabSize="normal"
+            app:maxImageSize="36dp"
+            app:useCompatPadding="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/warning_anonimous"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/fab_margin"
+        android:paddingRight="@dimen/activity_vertical_margin">
+
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Atención:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center"
+            android:text="En caso de que exista riesgo actual o inminente a la vida o la salud, usted no debe iniciar esta llamada. Por favor, contáctese con los servicios de emergencias siguientes."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Servicios de Emergencia: 911"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+        >
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Línea de Vida: 0800 0767"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+            >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:autoLink="email"
+            android:gravity="center"
+            android:text="Por más información, escriba a hola@yoteescucho.org."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColorLink="#00B8D4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:autoLink="web"
+            android:gravity="center"
+            android:text="O visite www.yoteescucho.org."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColorLink="#00B8D4" />
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

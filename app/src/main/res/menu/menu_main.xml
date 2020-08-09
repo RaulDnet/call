@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.te.escucho.MainActivity">
+
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Acceso para Escuchadores"
+        android:visible="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="Términos y Condiciones"
+        android:visible="false"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_conect"
+        android:orderInCategory="100"
+        android:title="@string/action_conect"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_disconect"
+        android:orderInCategory="100"
+        android:title="@string/action_disconect"
+        android:visible="false"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/close_app_main"
+        android:title="Cerrar"
+        android:visible="true"
+        android:orderInCategory="102"
+        />
+
+
+</menu>
